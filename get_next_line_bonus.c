@@ -6,7 +6,7 @@
 /*   By: mle-biha <mle-biha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 17:12:54 by mle-biha          #+#    #+#             */
-/*   Updated: 2022/10/15 17:21:23 by mle-biha         ###   ########.fr       */
+/*   Updated: 2022/10/16 17:22:38 by mle-biha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,7 +121,7 @@ char	*get_next_line(int fd)
 	static char	*stash[1024];
 	char		*line;
 
-	if (fd < 0 || BUFFER_SIZE < 1)
+	if (fd < 0 || fd > 1024 || BUFFER_SIZE < 1)
 		return (NULL);
 	stash[fd] = ft_read_file(fd, stash[fd]);
 	if (stash[fd] == NULL || stash[fd][0] == '\0')
