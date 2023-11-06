@@ -11,4 +11,4 @@ Then, you'll need to type `gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_
 To use the bonus, type `gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line_bonus.c get_next_line_utils_bonus.c main.c`.  
 
 ## How to use
-Once the project is compiled, type `./a.out `*file*` where `file` is a file that you want to read.
+Once the project is compiled, type `./a.out `*file*`` where `file` is a file that you want to read.
